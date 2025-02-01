@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  
+  <nav>
+    <div class="left">
+      <a href="https://vemamohith.github.io/portfoliovercel/">MOHITH VEMA</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com/vemamohith" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/mohithvema/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:vemamohith28@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+  
+    <section class="hero-section">
+      <div class="text">
+        <h2 >Hi, This is <span id="hii">Mohith Vema</span> 👋</h2>
+        <p>Curently pursuing B.tech final year in Computer Science and Engineering <br> in Sri Venkateswara College of Engineering ,Tirupati.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-hand-pointer" aria-hidden="true"></i>
+            <span>Skills</span>
+          </a>
+          
+          
+          
+          <a href="#education">
+            <i class="fa-solid fa-book"></i>
+            <span>Education </span>
+          </a>
+          <a id="resumedownload" href="Mohith_vema_resume.pdf" download="pdf" >
+            <i class="fa-solid fa-file"></i>
+            <button type="button">Resume</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="moh.jpg" alt="Mohithvema">
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+      <p>I am having a very Good Knowledge on the Languages like C,Python,Html,Css,javascript,JQuery,Sql.
+        <br>
+        and I a have Hands on experience on the operating systems like Windows,ubuntu,linux and Red hat Enterprises etc.
+        <br>
+
+      </p>  
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="html.png" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="css.png" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="js.png" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        <div class="cell">
+          <img src="jq.png" alt="Jquery logo">
+          <span>JQUERY</span>
+        </div>
+        
+        <div class="cell">
+          <img src="django.png" alt="django logo" width="50px" height="30px">
+          <span>Django</span>
+        </div>
+
+        <div class="cell">
+          <img src="sql.png" alt="Sql logo">
+          <span>Sql</span>
+        </div>
+        
+        <div class="cell">
+          <img src="py.png" alt="Python logo">
+          <span>Python</span>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="education" class="education-section">
+      <div id="Education">
+      <h2>Educational background</h2>
+        <table id="table">
+          <tr>
+            <th>
+              course
+            </th>
+            <th>Institution</th>
+            <th>Board/<br>
+              University</th>
+            <th>Year of Completion</th>
+            <th>Percentage</th>
+          </tr>
+          <tr>
+            <td>B.Tech<br>
+            (CSE)</td>
+            <td>Sri Venkateswara College of Engineering, Tirupati</td>
+            <td>JNTUA<br>(Autonomous)</td>
+            <td>2025</td>
+            <td>8.67 GPA
+              <br>(86.7%)<br>
+              (Up to 3-1)</td>
+          </tr>
+          <tr>
+            <td>Diploma <br>(CME)</td>
+            <td>Sree Vidyanikethan Engineering College, Tirupati</td>
+            <td>SBTET</td>
+            <td>2022</td>
+            <td>81.5%</td>
+          </tr>
+          <tr>
+            <td>Xth</td>
+            <td>Cambridge Public School, Tirupati</td>
+            <td>State Board</td>
+            <td>2019</td>
+            <td>9.7 GPA</td>
+          </tr>
+        </table>
+      </div>
+      
+    </section>
+    
+    <br>
+    <br><br>
+    <br><br>
+    <br>
+    <section>
+      <div id="declaration">
+        <h2>
+          DECLARATION
+        </h2>
+        <p>
+          I, VEMA MOHITH do hereby confirm that the information given above is genuine to the best of my knowledge and belief.</p>
+        </p>
+      </div>
+    </section>
+    
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".right");
+
+    menuToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+  });
+</script>
+
+</body>
+</html>
